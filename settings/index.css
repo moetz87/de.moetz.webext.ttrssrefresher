@@ -1,0 +1,92 @@
+/**************************/
+/* General */
+/**************************/
+
+html {
+    min-width: 750px;
+}
+
+html,
+body {
+    font-size: 13pt;
+    background-color: #F9F9FA;
+}
+
+input {
+    height: 30px;
+    background-color: white;
+    border: 1px solid lightgrey;
+}
+
+.content {
+    width: calc(100% - 2px);
+    border: 1px solid lightgrey;
+    padding: 20px;
+}
+
+/**************************/
+/* Messager */
+/**************************/
+
+#messagerOverlay {
+    position: fixed;
+    display: none;
+    width: calc(100% - 2px);
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    border-radius: 5px;
+    background-color: rgba(146, 252, 160, 0.2);
+    border: 1px solid rgb(90, 175, 100);
+}
+
+#messagerOverlay .error {
+    background-color: rgba(252, 146, 146, 0.2);
+    border: 1px solid rgb(192, 63, 95);
+}
+
+#messager {
+    position: fixed;
+    width: calc(100% - 4px);
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    z-index: 3;
+    background-color: rgb(146, 252, 160);
+    border-bottom: 1px solid rgb(90, 175, 100);
+}
+
+#messager .error {
+    background-color: rgb(252, 146, 146);
+    border-bottom: 1px solid rgb(192, 63, 95);
+}
+
+/**************************/
+/* Settings */
+/**************************/
+
+#settings .entry {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#settings .entry.first {
+    margin-top: 0px;
+}
+
+#settings .entry .key {
+    padding-bottom: 5px;
+}
+
+#settings .entry .value {
+    width: 100%;
+}
+
+#settings .entry .value input {
+    width: 100%;
+}

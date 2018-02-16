@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "TinyTinyRSS Refresher",
+    "version": "1.0.0",
+    "description": "Eine WebExtension zur periodischen Aktualisierung von TinyTinyRSS-Webapps.",
+    "author": "Marco Oetz",
+    "applications": {
+        "gecko": {
+            "id": "dev@marcooetz.de"
+        }
+    },
+    "icons": {
+        "48": "icons/logo.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "16": "icons/logo.png",
+            "32": "icons/logo.png"
+        }
+    },
+    "options_ui": {
+        "page": "settings/index.html"
+    },
+    "background": {
+        "scripts": ["background-scripts/enable-disable-handler.js", "background-scripts/refresh-triggerer.js"]
+    },
+    "permissions": ["storage", "tabs", "<all_urls>"],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+}
